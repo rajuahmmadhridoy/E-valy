@@ -2,11 +2,13 @@
 .discount_Component{
     margin-top:50px;
     .discountInner {
+        display: flex;
         background: $white;
         padding: 15px;
         box-shadow: 1px 0px 5px $grayLight;
         border-radius: 2px;
         .discountContent {
+
             button {
                 color: $white;
                 border: none;
@@ -28,6 +30,22 @@
                     color: gray;
                     text-decoration: line-through;
                 }
+            }
+        }
+        img {
+            width: 100%;
+            max-width: 180px;
+        }
+    }
+}
+
+@media screen and (max-width:768px){
+    .discount_Component{
+        .discountInner{
+            display: block !important;
+                img {
+                max-width: 330px;
+                margin-left: 15px;
             }
         }
     }
