@@ -35,28 +35,34 @@ const Header = () => {
     <div className="header_component">
       <div className="mobileNav">
         <Container>
-        <div className="mobileNavTop d-flex justify-content-between align-items-center">
-          {" "}
-          <button onClick={()=>sideBarClick(!sideBarActive)}>
+          <div className="mobileNavTop d-flex justify-content-between align-items-center">
             {" "}
-            <GoThreeBars />
-          </button>
-          <img className="logo" src={logo} alt="" />
-          <FaUser />
-        </div>
-        <InputGroup className="mb-3">
-          <FormControl
-            placeholder="search for"
-            aria-label="Recipient's username"
-            aria-describedby="basic-addon2"
-          />
-          <Button
-            variant="outline-primary bg-primary text-white"
-            id="button-addon2"
-          >
-            Button
-          </Button>
-        </InputGroup>
+            <button onClick={() => sideBarClick(!sideBarActive)}>
+              {" "}
+              <GoThreeBars />
+            </button>
+            <img className="logo" src={logo} alt="" />
+            <FaUser />
+          </div>
+          {sideBarActive && (
+            <Sidebar
+              sideBarClick={sideBarClick}
+              sideBarActive={sideBarActive}
+            />
+          )}
+          <InputGroup className="mb-3">
+            <FormControl
+              placeholder="search for"
+              aria-label="Recipient's username"
+              aria-describedby="basic-addon2"
+            />
+            <Button
+              variant="outline-primary bg-primary text-white"
+              id="button-addon2"
+            >
+              Button
+            </Button>
+          </InputGroup>
         </Container>
       </div>
       <div className="top_header">
