@@ -1,0 +1,77 @@
+// brands_component
+.bagsLuggages_component {
+  margin-top: 30px;
+  .bagsLuggages_top {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    div {
+      .input-group {
+        button {
+          color: #fff;
+          border: none;
+          background: #202a2f;
+        }
+        input {
+          border: 1px solid #202a2f;
+        }
+      }
+      button {
+        height: 40px;
+        margin-left: 20px;
+        width: 120px;
+      }
+    }
+  }
+  .bagsLuggagesInner {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+    .bagsLuggagesItems {
+      background: #fff;
+      height: 380px;
+      box-shadow: 1px 0px 5px $grayLight;
+      border-radius: 5px;
+      .images {
+        text-align: center;
+        height: 270px;
+        padding: 20px 20px;
+        transition: 1s;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      &:hover .images {
+        transform: scale(1.1);
+      }
+      .bagsLuggagesContent {
+        color: #222;
+        text-align: center;
+        padding: 0 20px;
+        h4 {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+// responsive
+@media screen and (max-width: 1024px) {
+  .bagsLuggages_component {
+    .bagsLuggagesInner {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+  }
+}
+@media screen and (max-width: 425px) {
+  .bagsLuggages_component {
+    .bagsLuggages_top {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .bagsLuggagesInner {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.banner_component{
+    margin-top: 20px;
+    .carousel{
+        a.carousel-control-prev {
+            display: none;
+        }
+        a.carousel-control-next {
+            display: none;
+        }
+        .carousel-indicators [data-bs-target] {
+            width: 10px;
+            height: 10px;
+            border-radius: 5px !important;
+            background-color: $primary;
+        }
+        .carousel-indicators .active {
+            width: 48px !important;
+        }
+    
+    }
+    
+}
+
+// banner
+@media screen and (max-width:425px){
+.banner_component {
+    margin-top: 100px !important;
+  }
+}
