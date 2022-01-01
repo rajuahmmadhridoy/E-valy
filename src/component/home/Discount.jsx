@@ -24,7 +24,7 @@ const Discount = () => {
                     <Link to="/">
                     <div className=" discountInner mb-5">
                         <div className="discountContent">
-                            <button>NOW</button>
+                            <button className="bg-primary">NOW</button>
                             <p>Samsung</p>
                             <h4>Samsung Galaxy A21s Smartphone 6.5" - 4GB RAM - 64GB ROM - 48MP Camera</h4>
                             <p>Smart Phone</p>

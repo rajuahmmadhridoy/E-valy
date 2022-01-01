@@ -25,5 +25,21 @@
 @media screen and (max-width:425px){
 .banner_component {
     margin-top: 100px !important;
+    .carousel.slide{
+
+        .carousel-inner{
+            .carousel-item{
+                img{
+                    min-height:215px !important;
+                   }
+            }
+            .active{
+                img{
+                    min-height:215px !important;
+                   }
+            }
+           
+        }
+    }
   }
 }

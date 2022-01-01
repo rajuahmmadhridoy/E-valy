@@ -31,6 +31,7 @@
         align-items: center;
         justify-content: space-between;
         background: $white;
+        padding: 0 10px;
         img {
           width: 100%;
           max-width: 98px;
@@ -41,6 +42,8 @@
           float: right;
           border-top: none;
           font-size: 15px;
+          border: none;
+          background: none;
         }
       }
       .eLoginArea {

@@ -72,6 +72,13 @@
     }
     .bagsLuggagesInner {
       grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      .bagsLuggagesItems{
+        height: 445px !important;
+        .images{
+          height: 375px !important;
+          padding: 0 35px !important;
+        }
+      }
     }
   }
 }
