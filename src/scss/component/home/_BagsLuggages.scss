@@ -71,13 +71,23 @@
       grid-template-columns: repeat(1, 1fr);
     }
     .bagsLuggagesInner {
-      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-      .bagsLuggagesItems{
-        height: 445px !important;
-        .images{
-          height: 375px !important;
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+      .bagsLuggagesItems {
+        height: 430px !important;
+        .images {
+          height: 330px !important;
           padding: 0 35px !important;
         }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .bagsLuggages_component {
+    .bagsLuggagesInner {
+      .bagsLuggagesItems {
+        
       }
     }
   }

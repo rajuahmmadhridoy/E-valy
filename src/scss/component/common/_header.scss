@@ -9,6 +9,9 @@
   .mobileNav {
     display: none;
   }
+  .mobileNavBottomSection{
+    display: none;
+  }
   // top_header
   .top_header {
     background: hsl(220, 23%, 97%);
@@ -147,6 +150,39 @@
       }
       }
     }
+    // mobileNavBottomSection
+    .mobileNavBottomSection {
+      display:block;
+      position: fixed;
+      z-index: 11;
+      bottom: 0;
+      background: #fff;
+      width: 100%;
+      .mobileNavBottom{
+        height: 60px;
+        a{
+          display: grid;
+          justify-items: center;
+          span {
+            font-size: 20px;
+            color: $gray;
+        }
+        p {
+          color: $gray;
+          font-size: 15px;
+          font-weight: 500;
+      }
+          .mobileNavBottomIcon {
+            background: #222;
+            width: 60px;
+            height: 60px;
+            border-radius: 38px;
+            transform: translateY(-25px);
+            padding: 5px;
+        }
+        }
+      }
+  }
     .top_header {
       display: none;
     }

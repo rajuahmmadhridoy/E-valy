@@ -7,17 +7,15 @@ import {
   Row,
   Col,
 } from "react-bootstrap";
-import { BsPhone, BsBag } from "react-icons/bs";
-import { BiPhoneCall, BiMessage } from "react-icons/bi";
+import { BsThreeDots, BsPhone, BsBagFill, BsBag } from "react-icons/bs";
+import { BiChat, BiPhoneCall, BiMessage } from "react-icons/bi";
 import { AiTwotoneMail } from "react-icons/ai";
 import { IoMdNotifications } from "react-icons/io";
 import { FaUser } from "react-icons/fa";
 import { GoThreeBars } from "react-icons/go";
-import { IoIosArrowDown, IoIosArrowForward } from "react-icons/io";
-import { ImCross, ImNewspaper } from "react-icons/im";
+import { IoMdNotificationsOutline, IoIosArrowDown } from "react-icons/io";
 import logo from "assets/images/e-valiy.png";
 import icon from "assets/images/e-icon.png";
-import bkash from "assets/images/bkash-icon.png";
 import { Link } from "react-router-dom";
 import Sidebar from "./Sidebar";
 const Header = () => {
@@ -65,6 +63,46 @@ const Header = () => {
           </InputGroup>
         </Container>
       </div>
+      <div className="mobileNavBottomSection">
+        <Container>
+          <div className="mobileNavBottom d-flex justify-content-between align-items-center">
+            <Link to="/">
+              <span>
+                <BsBagFill />
+              </span>
+              <p>Cart</p>
+            </Link>
+
+            <Link to="/">
+              <span>
+                <IoMdNotificationsOutline />
+              </span>
+              <p>Notification</p>
+            </Link>
+            <Link to="/">
+              <div className="mobileNavBottomIcon">
+              <img src={icon} alt="" />
+              </div>
+            </Link>
+
+            <Link to="/">
+              <span>
+                {" "}
+                <BiChat />
+              </span>
+              <p>Cart</p>
+            </Link>
+
+            <Link to="/">
+              <span>
+                <BsThreeDots />
+              </span>
+              <p>Menu</p>
+            </Link>
+          </div>
+        </Container>
+      </div>
+      {/* mobileNavFooter_end */}
       <div className="top_header">
         <Container className="d-flex justify-content-between">
           <ul className="d-flex gap-3">

@@ -50,3 +50,18 @@
     }
   }
 }
+
+@media screen and (max-width: 320px) {
+    .brands_component {
+      .brandsInner{
+        .card {
+          a {
+            img {
+              padding: 0 30px;
+          }
+          }
+        }
+      }
+    }
+  
+}
