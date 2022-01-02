@@ -11,3 +11,12 @@
         }
     }
 }
+
+@media screen and (max-width:425px){
+    .shopStore_component{
+        .shopStoreItems {
+            grid-template-columns: repeat(auto-fit, minmax(143px, 1fr));
+        }
+    }
+    
+}

@@ -2,6 +2,10 @@
 .brands_component {
   margin-top: 30px;
   .brands_top {
+    h2{
+      color: $black;
+      font-weight: 700;
+    }
     display: grid;
       grid-template-columns: repeat(2, 1fr);
     div {
@@ -36,6 +40,11 @@
             max-height: 180px;
             padding: 0 10px;
         }
+        .card-body{
+          p{
+            color: $black;
+          }
+        }
       }
     }
   }
@@ -47,6 +56,12 @@
     .brands_top {
       display: grid;
       grid-template-columns: repeat(1, 1fr);
+    }
+    .brandsInner {
+      grid-template-columns: repeat(auto-fit, minmax(143px, 1fr));
+      .card {
+          height: 250px;;
+      }
     }
   }
 }

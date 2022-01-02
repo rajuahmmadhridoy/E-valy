@@ -29,10 +29,14 @@
   // end_top_header
   // start-middle_header
   .middle_header {
+    margin-bottom: 10px;
     .logo {
       width: 100%;
       max-width: 120px;
     }
+    .input-group {
+      margin: 0 !important;
+  }
     .icons {
       li {
         box-shadow: 0px 0px 4px 0px $grayLight;

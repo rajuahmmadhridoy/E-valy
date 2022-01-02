@@ -2,6 +2,10 @@
 .bagsLuggages_component {
   margin-top: 30px;
   .bagsLuggages_top {
+    h2{
+      color: $black;
+      font-weight: 700;
+    }
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     div {
@@ -45,11 +49,15 @@
         transform: scale(1.1);
       }
       .bagsLuggagesContent {
-        color: #222;
         text-align: center;
         padding: 0 20px;
         h4 {
           font-size: 18px;
+          color: $black;
+        }
+        p{
+          color: $black;
+
         }
       }
     }
@@ -71,13 +79,16 @@
       grid-template-columns: repeat(1, 1fr);
     }
     .bagsLuggagesInner {
-      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
       .bagsLuggagesItems {
-        height: 430px !important;
+        height: 285px !important;
         .images {
-          height: 330px !important;
+          height: 190px !important;
           padding: 0 35px !important;
         }
+        .bagsLuggagesContent {
+          padding: 0 12px;
+      }
       }
     }
   }
@@ -87,7 +98,27 @@
   .bagsLuggages_component {
     .bagsLuggagesInner {
       .bagsLuggagesItems {
-        
+        height: 300px !important;
+        .images {
+          padding: 0 10px !important;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .bagsLuggages_component {
+    .bagsLuggagesInner {
+      .bagsLuggagesItems {
+        height: 300px !important;
+        .images {
+          height: 165px !important;
+        }
+        .bagsLuggagesContent{
+          padding: 0 5px !important;
+
+        }
       }
     }
   }
